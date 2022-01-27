@@ -7,6 +7,12 @@
     src: url('../fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 :root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
@@ -42,14 +48,29 @@ nav {
 }
 
 main {
+    padding: 20px;
+    max-width: 1000px;
+    min-width: 300px;
     background: #ffffff;
+    margin: 0 auto;
 }
+
 main h1 {
     font-family: var(--fonte-android);
 }
 
 main h2 {
     font-family: var(--fonte-android);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 footer { 
